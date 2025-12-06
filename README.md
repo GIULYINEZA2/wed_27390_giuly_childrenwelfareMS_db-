@@ -1,11 +1,9 @@
-## Children Welfare Management System
+### Children Welfare Management System
 
 **Student Name:** NDAYISHIMIYE INEZA GIULY  
 **Student ID:** 27390  
 **Course:** Database Development with PL/SQL (INSY 8311)  
-**Institution:** Adventist University of Central Africa (AUCA)  
-**Academic Year:** 2025-2026 | Semester I  
-**Project Completion Date:** December 7, 2025  
+**Institution:** Adventist University of Central Africa (AUCA)   
 **Lecturer:** Eric Maniraguha 
 
 ---
