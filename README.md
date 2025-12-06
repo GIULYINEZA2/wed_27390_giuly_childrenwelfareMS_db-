@@ -1,10 +1,10 @@
-### Children Welfare Management System
-
-**Student Name:** NDAYISHIMIYE INEZA GIULY  
-**Student ID:** 27390  
-**Course:** Database Development with PL/SQL (INSY 8311)  
-**Institution:** Adventist University of Central Africa (AUCA)   
-**Lecturer:** Eric Maniraguha 
+# Children Welfare Management System
+---
+#### **Student Name:** NDAYISHIMIYE INEZA GIULY  
+#### **Student ID:** 27390  
+#### **Course:** Database Development with PL/SQL (INSY 8311)  
+#### **Institution:** Adventist University of Central Africa (AUCA)   
+#### **Lecturer:** Eric Maniraguha 
 
 ---
 
@@ -134,7 +134,7 @@ The process demonstrates how PL/SQL stored procedures, triggers, and tables repl
 ![Entity Relationship Diagram](https://github.com/GIULYINEZA2/wed_27390_giuly_childrenwelfareMS_db-/blob/5a99f73691e182fdcc3f28073cb61ae000e2e713/screenshots/ERD.png)
 ---
 
-### 1️ Entities, Attributes, Data Types, and Keys
+### 1️. Entities, Attributes, Data Types, and Keys
 
 ###  **sections**
 | Attribute     | Data Type       | Key / Constraint |
@@ -189,7 +189,7 @@ The process demonstrates how PL/SQL stored procedures, triggers, and tables repl
 
 ---
 
-### 2️ Relationships & Constraints
+### 2️. Relationships & Constraints
 
 | Relationship | Type | Description |
 |-------------|------|-------------|
@@ -206,7 +206,7 @@ The process demonstrates how PL/SQL stored procedures, triggers, and tables repl
 
 ---
 
-###  Normalization (Up to 3NF)
+###  3.Normalization (Up to 3NF)
 
 | Normal Form | How Achieved |
 |-------------|--------------|
@@ -229,7 +229,7 @@ Using **3NF** helps to:
 
 ---
 
-### 4️ Handling Data Scenarios
+### 4️. Handling Data Scenarios
 
 Your model supports:
 
