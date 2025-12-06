@@ -43,33 +43,83 @@ Manual record-keeping in orphanages is prone to errors, inconsistent updates, an
 
 ## Quick Start
 
-### 1. Open Project
-- Open **Oracle SQL Developer**
+Follow these steps to set up and run the **Children Welfare Management System** locally:
+
+### 1. Open Your Project
+
+- Open **Oracle SQL Developer** (or your preferred Oracle client).  
+- Locate the folder where you saved your project files:
+
+
+
+
 
 - All SQL scripts are in `database/scripts/`.
 
-### 2. Create the Pluggable Database (PDB)
+---
 
--- Run the PDB creation script
-@database/scripts/create_pdb.sql
+### 2. Create the Database (PDB)
 
--- Execute table creation scripts
-@database/scripts/create_tables.sql
+- Open and run: [create_pdb.sql](database/scripts/create_pdb.sql)  
 
--- Populate tables with example data
-@database/scripts/insert_data.sql
+> This creates the main database for your system.
 
--- Execute PL/SQL procedures
-@database/scripts/procedures.sql
+---
 
--- Execute PL/SQL functions
-@database/scripts/functions.sql
+### 3. Create Tables
 
--- Execute PL/SQL packages
-@database/scripts/packages.sql
+- Open and run: [create_tables.sql](database/scripts/create_tables.sql)  
 
--- Implement triggers 
-@database/scripts/triggers.sql 
+> Creates all tables like `CHILDREN`, `EDUCATION`, `SUPPORT_SERVICES`, etc.
+
+---
+
+### 4. Insert Sample Data
+
+- Open and run: [insert_data.sql](database/scripts/insert_data.sql)  
+
+> Adds example children, education records, and support services.
+
+---
+
+### 5. Run Functions
+
+- Open and run: [functions.sql](database/scripts/functions.sql)  
+
+> Functions perform calculations, validations, and lookups.
+
+---
+
+### 6. Run Packages
+
+- Open and run: [packages.sql](database/scripts/packages.sql)  
+
+> Packages group related procedures and functions for automation.
+
+---
+
+### 7. Run Triggers
+
+- Open and run: [triggers.sql](database/scripts/triggers.sql)  
+
+> Triggers track changes and log actions automatically for auditing.
+
+---
+
+### 8. Verify Data
+
+- Run the following queries in SQL Developer:
+
+## Documentation
+
+You can find detailed documentation for the project in the following files:
+
+- [Data Dictionary](documentation/data_dictionary.md) – Details of all tables, columns, types, and constraints.
+- [Architecture](documentation/architecture.md) – Overview of the system design and database structure.
+- [Design Decisions](documentation/design_decisions.md) – Explanation of key design choices made during development.
+- [BI Requirements](business_intelligence/bi_requirements.md) – KPIs, dashboards, and analytical queries.
+- [Dashboards](business_intelligence/dashboards.md) – Mockups of BI dashboards.
+- [KPI Definitions](business_intelligence/kpi_definitions.md) – Detailed description of KPIs used in the system.
 
 
 
