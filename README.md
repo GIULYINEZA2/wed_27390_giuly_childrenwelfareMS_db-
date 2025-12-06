@@ -45,18 +45,11 @@ Manual record-keeping in orphanages is prone to errors, inconsistent updates, an
 
 Follow these steps to set up and run the **Children Welfare Management System** locally:
 
-### 1. Open Your Project
+### 1. Open Your Project 
 
-- Open **Oracle SQL Developer** (or your preferred Oracle client).  
-- Locate the folder where you saved your project files:
-
-
-
-
+- Open **Oracle SQL Developer**   
 
 - All SQL scripts are in `database/scripts/`.
-
----
 
 ### 2. Create the Database (PDB)
 
@@ -64,15 +57,11 @@ Follow these steps to set up and run the **Children Welfare Management System** 
 
 > This creates the main database for your system.
 
----
-
 ### 3. Create Tables
 
 - Open and run: [create_tables.sql](database/scripts/create_tables.sql)  
 
 > Creates all tables like `CHILDREN`, `EDUCATION`, `SUPPORT_SERVICES`, etc.
-
----
 
 ### 4. Insert Sample Data
 
@@ -80,25 +69,25 @@ Follow these steps to set up and run the **Children Welfare Management System** 
 
 > Adds example children, education records, and support services.
 
----
-
 ### 5. Run Functions
 
 - Open and run: [functions.sql](database/scripts/functions.sql)  
 
 > Functions perform calculations, validations, and lookups.
 
----
+### 6. Run Cursors
 
-### 6. Run Packages
+- Open and run: [cursors.sql](database/scripts/cursors.sql)  
+
+> Cursors handle multi-row processing and optimized data retrieval.
+
+### 7. Run Packages
 
 - Open and run: [packages.sql](database/scripts/packages.sql)  
 
 > Packages group related procedures and functions for automation.
 
----
-
-### 7. Run Triggers
+### 8. Run Triggers
 
 - Open and run: [triggers.sql](database/scripts/triggers.sql)  
 
@@ -106,9 +95,14 @@ Follow these steps to set up and run the **Children Welfare Management System** 
 
 ---
 
-### 8. Verify Data
+### 9. Verify Data
 
 - Run the following queries in SQL Developer:
+SELECT * FROM CHILDREN;
+SELECT * FROM EDUCATION;
+SELECT * FROM SUPPORT_SERVICES;
+SELECT * FROM AUDIT_LOG;
+
 
 ## Documentation
 
