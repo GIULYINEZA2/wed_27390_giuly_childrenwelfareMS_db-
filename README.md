@@ -41,6 +41,99 @@ Manual record-keeping in orphanages is prone to errors, inconsistent updates, an
 - Centralized secure database with automated reporting
 
 
+### PHASE II: Business Process Modeling
+
+### 🎯 Objective
+Model the real-life business processes that the *Children Welfare Management System (CWMS)* automates, based on the actual database entities:
+- SECTIONS  
+- CHILDREN  
+- EDUCATION  
+- STAFF  
+- SUPPORT_SERVICES  
+
+---
+
+### 1. Define Scope
+
+The CWMS manages all welfare-related processes for children under 18 in an orphanage.  
+The system automates:
+
+- Child registration  
+- Disability classification  
+- Section assignment  
+- Education tracking  
+- Support services provided by staff  
+- Staff activity monitoring  
+- Report generation for decision-making  
+
+**MIS Relevance:**  
+The process demonstrates how PL/SQL stored procedures, triggers, and tables replace manual registers with an automated, reliable system.
+
+---
+
+### 2. Identify Key Entities & Actors
+
+###  Users / Actors
+- Social Workers (register children, update welfare information)  
+- Education Officers (enter school progress)  
+- Support Staff (record services offered)  
+- System Administrator (manage users, verify records, generate reports)  
+
+###  Departments Involved
+- Child Welfare Unit  
+- Education Unit  
+- Support/Medical Services  
+- Administration  
+
+###  Data Sources
+- Registration forms  
+- Education/progress reports  
+- Support service logs  
+- Staff activity reports  
+
+### Roles & Responsibilities
+- **Social Workers** → Create children records, update disability status, assign sections  
+- **Education Officers** → Maintain EDUCATION table  
+- **Support Staff** → Insert into SUPPORT_SERVICES table  
+- **Admin** → Approve records, view summaries, generate reports  
+
+---
+
+### 3. Business Process Diagram (Swimlanes)
+
+
+![Business Process Diagram](screenshots/business_process/business_process_model.png)
+
+
+### 4. BPMN/UML Notations Used
+
+- **Start Event** → Green circle  
+- **End Event** → Red circle  
+- **Task** → Rounded rectangle  
+- **Decision (Gateway)** → Diamond  
+- **Swimlanes** → Social Worker, Education Officer, Support Staff, Admin  
+- **Data Objects** → Represent CHILDREN, EDUCATION, STAFF, SUPPORT_SERVICES tables  
+- **Arrows** → Flow between tasks  
+
+---
+
+### 5. Logical Process Flow
+
+1. Start → Child arrives at the orphanage  
+2. Social Worker registers the child (CHILDREN table)  
+3. Trigger assigns child to section (SECTIONS table) based on disability  
+4. Education Officer enters school details (EDUCATION table)  
+5. Support Staff logs services provided (SUPPORT_SERVICES table)  
+6. Admin reviews data and validates entries  
+7. System stores and updates dashboards  
+8. End → Reports available for management  
+
+---
+
+
+---
+
+
 ## Quick Start
 
 Follow these steps to set up and run the **Children Welfare Management System** locally:
