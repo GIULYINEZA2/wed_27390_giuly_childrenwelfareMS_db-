@@ -43,7 +43,7 @@ Manual record-keeping in orphanages is prone to errors, inconsistent updates, an
 
 ### PHASE II: Business Process Modeling
 
-### 🎯 Objective
+###  Objective
 Model the real-life business processes that the *Children Welfare Management System (CWMS)* automates, based on the actual database entities:
 - SECTIONS  
 - CHILDREN  
@@ -102,7 +102,7 @@ The process demonstrates how PL/SQL stored procedures, triggers, and tables repl
 ### 3. Business Process Diagram (Swimlanes)
 
 
-![Business Process Diagram](screenshots/business_process/business_process_model.png)
+![Business Process Diagram](https://github.com/GIULYINEZA2/wed_27390_giuly_childrenwelfareMS_db-/blob/976d1576b88e4866c87f0c04503e63bf605d433e/screenshots/BPMN.png)
 
 
 ### 4. BPMN/UML Notations Used
@@ -127,9 +127,6 @@ The process demonstrates how PL/SQL stored procedures, triggers, and tables repl
 6. Admin reviews data and validates entries  
 7. System stores and updates dashboards  
 8. End → Reports available for management  
-
----
-
 
 ---
 
