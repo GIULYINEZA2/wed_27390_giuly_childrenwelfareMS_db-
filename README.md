@@ -50,7 +50,6 @@ Manual record-keeping in orphanages is prone to errors, inconsistent updates, an
 
 ### 2. Create the Pluggable Database (PDB)
 
-```sql
 -- Run the PDB creation script
 @database/scripts/create_pdb.sql
 
