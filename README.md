@@ -41,7 +41,7 @@ Manual record-keeping in orphanages is prone to errors, inconsistent updates, an
 - Centralized secure database with automated reporting
 
 
-### PHASE II: Business Process Modeling
+## PHASE II: Business Process Modeling
 
 ###  Objective
 Model the real-life business processes that the *Children Welfare Management System (CWMS)* automates, based on the actual database entities:
@@ -127,6 +127,121 @@ The process demonstrates how PL/SQL stored procedures, triggers, and tables repl
 6. Admin reviews data and validates entries  
 7. System stores and updates dashboards  
 8. End → Reports available for management  
+
+---
+
+##  Phase III: Logical Model Design  
+### Entity–Relationship (ER) Model
+
+![Entity Relationship Diagram](https://github.com/GIULYINEZA2/wed_27390_giuly_childrenwelfareMS_db-/blob/5a99f73691e182fdcc3f28073cb61ae000e2e713/screenshots/ERD.png)
+---
+
+### 1️ Entities, Attributes, Data Types, and Keys
+
+###  **sections**
+| Attribute     | Data Type       | Key / Constraint |
+|---------------|------------------|------------------|
+| section_id    | NUMBER           | Primary Key (PK) |
+| section_name  | VARCHAR2(50)     | NOT NULL, UNIQUE |
+
+---
+
+###  **children**
+| Attribute         | Data Type        | Key / Constraint |
+|------------------|-------------------|------------------|
+| child_id         | NUMBER            | Primary Key (PK) |
+| full_name        | VARCHAR2(100)     | NOT NULL |
+| date_of_birth    | DATE              | NOT NULL |
+| gender           | VARCHAR2(10)      | CHECK (gender IN ('Male','Female')) |
+| disability_status| VARCHAR2(3)       | CHECK (disability_status IN ('Yes','No')) |
+| section_id       | NUMBER            | Foreign Key (FK → sections.section_id) |
+
+---
+
+###  **education**
+| Attribute        | Data Type        | Key / Constraint |
+|------------------|-------------------|------------------|
+| education_id     | NUMBER            | Primary Key (PK) |
+| child_id         | NUMBER            | Foreign Key (FK → children.child_id) |
+| school_name      | VARCHAR2(100)     | NOT NULL |
+| grade_level      | VARCHAR2(30)      |  |
+| performance_notes| VARCHAR2(200)     |  |
+
+---
+
+###  **staff**
+| Attribute      | Data Type        | Key / Constraint |
+|----------------|-------------------|------------------|
+| staff_id       | NUMBER            | Primary Key (PK) |
+| full_name      | VARCHAR2(100)     | NOT NULL |
+| position       | VARCHAR2(50)      | NOT NULL |
+| contact_number | VARCHAR2(15)      | UNIQUE |
+
+---
+
+###  **support_services**
+| Attribute      | Data Type         | Key / Constraint |
+|----------------|--------------------|------------------|
+| service_id     | NUMBER             | Primary Key (PK) |
+| service_type   | VARCHAR2(50)       | NOT NULL |
+| description    | VARCHAR2(200)      |  |
+| child_id       | NUMBER             | Foreign Key (FK → children.child_id) |
+| staff_id       | NUMBER             | Foreign Key (FK → staff.staff_id) |
+| service_date   | DATE               | DEFAULT SYSDATE |
+
+---
+
+### 2️ Relationships & Constraints
+
+| Relationship | Type | Description |
+|-------------|------|-------------|
+| Section → Children | 1:M | One section contains many children |
+| Child → Education  | 1:1 | Each child has one education record |
+| Child → Support Services | 1:M | A child can receive many services |
+| Staff → Support Services | 1:M | Staff can serve many children |
+
+###  **Constraints Used**
+- **NOT NULL** → essential fields (child name, gender, staff name…)  
+- **UNIQUE** → section_name, staff.contact_number  
+- **CHECK** → gender, disability_status  
+- **DEFAULT** → service_date = SYSDATE  
+
+---
+
+###  Normalization (Up to 3NF)
+
+| Normal Form | How Achieved |
+|-------------|--------------|
+| **1NF** | No repeating groups; all values are atomic |
+| **2NF** | All non-key attributes fully depend on PK |
+| **3NF** | No transitive dependencies |
+
+###  Result:  
+All tables are fully normalized to **Third Normal Form (3NF)**.
+
+---
+
+###  Why 3NF?  
+Using **3NF** helps to:
+
+- Reduce redundancy  
+- Keep each table focused → *single purpose*  
+- Strengthen relationships using proper FK constraints  
+- Make the system easier to maintain, scale, and report on  
+
+---
+
+### 4️ Handling Data Scenarios
+
+Your model supports:
+
+- Assigning each child to a section  
+- Handling disability vs non-disability children  
+- Tracking school and grade information  
+- Multiple services per child  
+- Staff–child assignment for services  
+- Audit control via triggers (e.g., block inserts on holidays)  
+- Using procedures/packages to generate reports  
 
 ---
 
