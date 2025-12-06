@@ -38,5 +38,59 @@ Manual record-keeping in orphanages is prone to errors, inconsistent updates, an
 - Education tracking  
 - Monitoring of support services  
 - Staff involvement tracking  
-- Centralized secure database with automated reporting  
+- Centralized secure database with automated reporting
+
+
+## Quick Start
+
+### 1. Open Project
+- Open **Oracle SQL Developer**
+
+- All SQL scripts are in `database/scripts/`.
+
+### 2. Create the Pluggable Database (PDB)
+
+```sql
+-- Run the PDB creation script
+@database/scripts/create_pdb.sql
+
+-- Execute table creation scripts
+@database/scripts/create_tables.sql
+
+-- Populate tables with example data
+@database/scripts/insert_data.sql
+
+-- Execute PL/SQL procedures
+@database/scripts/procedures.sql
+
+-- Execute PL/SQL functions
+@database/scripts/functions.sql
+
+-- Execute PL/SQL packages
+@database/scripts/packages.sql
+
+-- Implement triggers 
+@database/scripts/triggers.sql 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
