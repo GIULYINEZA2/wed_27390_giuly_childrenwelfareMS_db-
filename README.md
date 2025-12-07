@@ -311,6 +311,7 @@ Follow these steps to set up and run the **Children Welfare Management System** 
 
 > Triggers track changes and log actions automatically for auditing.
 
+
 ---
 
 ## Documentation
@@ -323,6 +324,17 @@ You can find detailed documentation for the project in the following files:
 - [BI Requirements](business_intelligence/bi_requirements.md) – KPIs, dashboards, and analytical queries.
 - [Dashboards](business_intelligence/dashboards.md) – Mockups of BI dashboards.
 - [KPI Definitions](business_intelligence/kpi_definitions.md) – Detailed description of KPIs used in the system.
+- ## Screenshots
+
+All screenshots for this project are organized in the `screenshots/` folder.
+
+### Folder Description
+ - Contains screenshots showing the database status, tablespaces, performance, and system monitoring from Oracle Enterprise Manager.
+
+- Includes screenshots of all tables, ERD, constraints, indexes, sequences, triggers, and other database structures created in the project.
+ 
+-  Shows screenshots of procedure/function execution, trigger tests, audit logs, and all SQL/PLSQL outputs used to verify the system works correctly.
+
 
 
 
