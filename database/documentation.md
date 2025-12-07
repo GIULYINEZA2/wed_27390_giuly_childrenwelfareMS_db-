@@ -1,0 +1,19 @@
+The CWMS automates child welfare operations by capturing personal details, disability status, school progress, and support services in a centralized Oracle database. Swimlanes illustrate how each department interacts with the system, ensuring smooth workflows.
+
+**MIS Functions**
+- Automated validations (gender, disability)
+- PL/SQL triggers to restrict holiday insertions
+- Packages and procedures to produce educational and welfare reports
+- Secure storage of all child and staff interactions
+
+**Organizational Impact**
+- Eliminates manual registry books
+- Ensures accurate documentation
+- Enhances staff coordination
+- Supports quick decision-making
+
+**Analytics Opportunities**
+- Identify children needing special attention
+- Monitor staff performance
+- Track trends in support services
+- Evaluate education progress
