@@ -248,23 +248,20 @@ Your model supports:
 
 Follow these steps to set up and run the **Children Welfare Management System** locally:
 
-### 1. Open Your Project 
+### 1. Create pluggable database and open sql developer 
 
-- Open **Oracle SQL Developer**   
-
-
-- All SQL scripts are in `database/scripts/`.
+![pluggable database](https://github.com/GIULYINEZA2/wed_27390_giuly_childrenwelfareMS_db-/blob/89134e2d7b4d226487f7c48e9b6442bfed9a10be/screenshots/database%20creation.png)
 
 ---
 
-### 2. Create the Database (PDB)
+### 2. - Open Oracle SQL Developer and Create the Database (PDB)
 
-- Open and run: [create_pdb.sql](database/scripts/create_pdb.sql)  
+ ![sql developer ](https://github.com/GIULYINEZA2/wed_27390_giuly_childrenwelfareMS_db-/blob/89134e2d7b4d226487f7c48e9b6442bfed9a10be/screenshots/sql%20developer.png  )
 
 > This creates the main database for your system.
 
 ---
-
+- All SQL scripts are in `database/scripts/`.
 ### 3. Create Tables
 
 - Open and run: [create_tables.sql](database/scripts/create_tables.sql)  
