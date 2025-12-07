@@ -133,6 +133,7 @@ The process demonstrates how PL/SQL stored procedures, triggers, and tables repl
 
 ![Entity Relationship Diagram](https://github.com/GIULYINEZA2/wed_27390_giuly_childrenwelfareMS_db-/blob/5a99f73691e182fdcc3f28073cb61ae000e2e713/screenshots/ERD.png)
 ---
+![pluggable database](https://github.com/GIULYINEZA2/wed_27390_giuly_childrenwelfareMS_db-/blob/646df2813f20398345812d8b15b8b26566fc0f0e/screenshots/Logical%20model%20diagram.png) 
 
 ### 1️. Entities, Attributes, Data Types, and Keys
 
@@ -248,9 +249,11 @@ Your model supports:
 
 Follow these steps to set up and run the **Children Welfare Management System** locally:
 
-### 1. Create pluggable database and open sql developer 
+### 1. Create pluggable database and navigate to OEM
 
-![pluggable database](https://github.com/GIULYINEZA2/wed_27390_giuly_childrenwelfareMS_db-/blob/89134e2d7b4d226487f7c48e9b6442bfed9a10be/screenshots/database%20creation.png)
+![pluggable database](https://github.com/GIULYINEZA2/wed_27390_giuly_childrenwelfareMS_db-/blob/89134e2d7b4d226487f7c48e9b6442bfed9a10be/screenshots/database%20creation.png) 
+
+![OEM dashboard](https://github.com/GIULYINEZA2/wed_27390_giuly_childrenwelfareMS_db-/blob/646df2813f20398345812d8b15b8b26566fc0f0e/screenshots/oem_monitoring.png) 
 
 ---
 
