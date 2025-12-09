@@ -100,7 +100,7 @@ The process demonstrates how PL/SQL stored procedures, triggers, and tables repl
 ### 3. Business Process Diagram (Swimlanes)
 
 
-![Business Process Diagram](https://github.com/GIULYINEZA2/wed_27390_giuly_childrenwelfareMS_db-/blob/976d1576b88e4866c87f0c04503e63bf605d433e/screenshots/BPMN.png)
+![Business Process Diagram](https://github.com/GIULYINEZA2/wed_27390_giuly_childrenwelfareMS_db-/blob/51f6dd5a7ee1f9ebbfcbf7def728c80f2dd15de8/screenshots/BPMN%20Correct.png)
 
 
 ### 4. BPMN/UML Notations Used
